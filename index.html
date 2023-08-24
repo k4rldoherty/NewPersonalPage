@@ -4,36 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script src="./main.js"></script>
-    
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap"
         rel="stylesheet">
-    
-    <!-- <link 
-        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    
+
     <link rel="stylesheet" href="./style.css">
-    
+
     <title>Karl Doherty</title>
 </head>
 
 <body>
     <header class="header">
-        <a class="logo" href="#">KD Personal Site.</a>
+        <a class="logo" href="#">- KD -</a>
         <nav class="navbar">
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#about">-About Me</a>
+            <a href="#skills">-Skills</a>
+            <a href="#projects">-Projects</a>
+            <a href="#">-Contact</a>
         </nav>
     </header>
 
@@ -42,7 +42,7 @@
             <div class="left">
                 <h3><box-icon name='hand-right' type='solid' animation='tada'></box-icon>Hey, my name is</h3>
                 <h1>Karl Doherty</h1>
-                <h3>And I'm a <span class="the-text"></span></h3>
+                <h3>And I'm a <span class="typed" id="typed"></span></h3>
                 <p>I am a recently graduated Software Developer from Dublin City University,<br> with 6 months of
                     industry experience.<br>
                     I love taking on new challenges and I am always eager to learn new things!</p><br><br>
@@ -54,9 +54,11 @@
                     <a href="https://www.linkedin.com/in/karl-doherty-084b37225/"><box-icon name='linkedin-square'
                             size="lg" type='logo' animation='tada-hover'></box-icon></a>
                 </div>
-                        <br><br>
-                <a class="btn-box" href="#about"><p>More about
-                    me</p></a>
+                <br><br>
+                <a class="btn-box" href="#about">
+                    <p>More about
+                        me</p>
+                </a>
             </div>
             <div class="right">
                 <img src="./images/pic.jpeg" alt="">
@@ -66,7 +68,7 @@
 
     <section class="about" id="about">
         <div class="about-image">
-            <img src="./images/pic.jpeg" alt="">
+            <img src="./images/IMG-0510.jpg" alt="">
         </div>
         <div class="about-text">
             <h2>About <span>Me</span></h2>
@@ -92,9 +94,10 @@
                 testament to my commitment to excellence and my desire to contribute to the ever-evolving landscape of
                 technology.
                 <br><br>
-                Beyond the lines of code, I'm an avid learner, constantly seeking opportunities to broaden my skill set
-                and delve into new technologies. I believe that growth is a continuous process, and I am committed to
-                staying at the forefront of innovation in the software development realm.
+                Beyond the lines of code, I'm an avid learner, and a fitness enthusiast. I practice some kickboxing and
+                Jiu-Jitsu
+                to keep the mind and body fresh from all those hours sitting at the computer! I'm also an animal lover,
+                and enjoy playing with my dog, Jax.
                 <br><br>
                 Thank you for taking the time to explore my journey as a software developer. Join me as I continue to
                 embrace challenges, learn from experiences, and contribute my part to the dynamic tapestry of the tech
@@ -110,32 +113,60 @@
                     Technical Skills
                 </h2>
 
-                <div class="skill"><box-icon type='logo' size="lg" name='javascript'></box-icon>JavaScript</div>
-                <div class="skill"><box-icon name='angular' size="lg" type='logo' ></box-icon>Angular</div>
-                <div class="skill"><box-icon name='html5' size="lg" type='logo' ></box-icon>HTML</div>
-                <div class="skill"><box-icon name='python' size="lg" type='logo' ></box-icon>Python</div>
-                <div class="skill"><box-icon type='logo' size="lg" name='java'></box-icon>Java</div>
-                <div class="skill"><box-icon name='dev-to' size="lg" type='logo' ></box-icon>Front End Development</div>
-    
+                <div class="skill"><box-icon type='logo' size="lg" name='javascript'></box-icon>JavaScript<progress
+                        value="80" max="100"></progress></div>
+                <div class="skill"><box-icon name='angular' size="lg" type='logo'></box-icon>Angular<progress value="75"
+                        max="100"></progress></div>
+                <div class="skill"><box-icon name='html5' size="lg" type='logo'></box-icon>HTML<progress value="90"
+                        max="100"></progress></div>
+                <div class="skill"><box-icon name='python' size="lg" type='logo'></box-icon>Python<progress value="80"
+                        max="100"></progress></div>
+                <div class="skill"><box-icon type='logo' size="lg" name='java'></box-icon>Java<progress value="65"
+                        max="100"></progress></div>
+                <div class="skill"><box-icon name='dev-to' size="lg" type='logo'></box-icon>Front End
+                    Development<progress value="80" max="100"></progress></div>
+
             </div>
             <div class="soft-skills">
                 <h2>
                     Soft Skills
                 </h2>
 
-                <div class="skill"><box-icon name='megaphone' size="lg" type='solid' ></box-icon>Communication</div>
-                <div class="skill"><box-icon name='crown' size="lg" type='solid' ></box-icon>Leadership</div>
-                <div class="skill"><box-icon name='group' size="lg" type='solid' ></box-icon>Teamwork</div>
-                <div class="skill"><box-icon type='solid' size="lg" name='palette'></box-icon>Creativity</div>
-                <div class="skill"><box-icon type='solid' size="lg" name='wrench'></box-icon>Problem Solving</div>
-                <div class="skill"><box-icon name='time-five' size="lg" type='solid' ></box-icon>Time Management</div>
+                <div class="skill"><box-icon name='megaphone' size="lg" type='solid'></box-icon>Communication<progress
+                        value="90" max="100"></progress></div>
+                <div class="skill"><box-icon name='crown' size="lg" type='solid'></box-icon>Leadership<progress
+                        value="50" max="100"></progress></div>
+                <div class="skill"><box-icon name='group' size="lg" type='solid'></box-icon>Teamwork<progress value="90"
+                        max="100"></progress></div>
+                <div class="skill"><box-icon type='solid' size="lg" name='palette'></box-icon>Creativity<progress
+                        value="80" max="100"></progress></div>
+                <div class="skill"><box-icon type='solid' size="lg" name='wrench'></box-icon>Problem Solving<progress
+                        value="75" max="100"></progress></div>
+                <div class="skill"><box-icon name='time-five' size="lg" type='solid'></box-icon>Time Management<progress
+                        value="80" max="100"></progress></div>
             </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects">
+            <h2>Projects.</h2>
+
         </div>
     </section>
 
     <footer>
         <p>By Karl Doherty, 2023</p>
     </footer>
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['full stack developer.', 'tech enthusiast.', 'continuous learner.'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+        });
+    </script>
 </body>
 
 </html>
