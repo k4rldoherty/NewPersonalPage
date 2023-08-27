@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <script src="./main.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
@@ -42,7 +42,9 @@
             <div class="left">
                 <h3><box-icon name='hand-right' type='solid' animation='tada'></box-icon>Hey, my name is</h3>
                 <h1>Karl Doherty</h1>
-                <h3>And I'm a <span class="typed" id="typed"></span></h3>
+                <div class="typed-container">
+                    <h3><span class="typed" id="typed"></span></h3>
+                </div>
                 <p>I am a recently graduated Software Developer from Dublin City University,<br> with 6 months of
                     industry experience.<br>
                     I love taking on new challenges and I am always eager to learn new things!</p><br><br>
@@ -66,43 +68,74 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-image">
-            <img src="./images/IMG-0510.jpg" alt="">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Full Stack Developer</h4>
-            <p>
-                Welcome to my corner of the digital realm! I'm Karl Doherty, a dedicated graduate software developer
-                with a passion for crafting innovative solutions through code. With 6 months of professional experience
-                as a full stack developer, I've embarked on an exhilarating journey into the world of technology.
-                <br><br>
-                My foundation is built upon a diverse array of programming languages, including Python, C, C#,
-                JavaScript, and TypeScript. These languages are not just tools in my arsenal; they are the means through
-                which I transform ideas into functional, elegant software. My proficiency in this polyglot landscape
-                allows me to navigate the complexities of software development with ease.
-                <br><br>
-                Having successfully completed multiple intricate assignments and projects, I have honed my skills in
-                translating abstract concepts into tangible applications. This experience has instilled in me a
-                meticulous approach to problem-solving and a deep appreciation for the intricacies of clean and
-                maintainable code.
-                <br><br>
-                Fuelled by an unquenchable curiosity, I am unwaveringly excited to immerse myself in challenging
-                projects. The prospect of collaborating with like-minded professionals to create impactful software
-                solutions invigorates me. Each line of code I write is not just a culmination of characters; it's a
-                testament to my commitment to excellence and my desire to contribute to the ever-evolving landscape of
-                technology.
-                <br><br>
-                Beyond the lines of code, I'm an avid learner, and a fitness enthusiast. I practice some kickboxing and
-                Jiu-Jitsu
-                to keep the mind and body fresh from all those hours sitting at the computer! I'm also an animal lover,
-                and enjoy playing with my dog, Jax.
-                <br><br>
-                Thank you for taking the time to explore my journey as a software developer. Join me as I continue to
-                embrace challenges, learn from experiences, and contribute my part to the dynamic tapestry of the tech
-                industry.
-            </p>
+    <section id="about">
+        <div class="about">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="./images/IMG-0510.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About <span>Me</span></h1>
+                    <p>
+                        Welcome to my corner of the digital realm! I'm Karl Doherty, a dedicated graduate software
+                        developer
+                        with a passion for crafting innovative solutions through code. With 6 months of professional
+                        experience
+                        as a full stack developer, I've embarked on an exhilarating journey into the world of
+                        technology.
+                        <br><br>
+                        My foundation is built upon a diverse array of programming languages, including Python, C, C#,
+                        JavaScript, and TypeScript. These languages are not just tools in my arsenal; they are the means
+                        through
+                        which I transform ideas into functional, elegant software. My proficiency in this polyglot
+                        landscape
+                        allows me to navigate the complexities of software development with ease.
+                        <br><br>
+                        Having successfully completed multiple intricate assignments and projects, I have honed my
+                        skills in
+                        translating abstract concepts into tangible applications. This experience has instilled in me a
+                        meticulous approach to problem-solving and a deep appreciation for the intricacies of clean and
+                        maintainable code.
+                        <br><br>
+                        Beyond the lines of code, I'm an avid learner, and a fitness enthusiast. I practice some
+                        kickboxing and
+                        Jiu-Jitsu
+                        to keep the mind and body fresh from all those hours sitting at the computer! I'm also an animal
+                        lover,
+                        and enjoy playing with my dog, Jax.
+                        <br><br>
+                        Thank you for taking the time to explore my journey as a software developer.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTabs('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTabs('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTabs('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><h3>Full Stack Development</h3></span><br><p>Designing and iplementing full stack projects</p>
+                            </li>
+                            <li><span><h3>UI/UX</h3></span><br><p>Designing Webb/App interfaces</p></li>
+                            <li><span><h3>Database Design</h3></span><br><p>Database Structuring for small and large projects</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><h3>2022 - 2022 (Internship)</h3></span><br><p>Software Engineer</p></li>
+                            <li><span><h3>2021 - 2023</h3></span><br><p>O'Reillys Sports - Store Operations Manager</p></li>
+                            <li><span><h3>2016 - 2021</h3></span><br><p>Kees Hotel - Lifegaurd</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><h3>BSc In Computer Science</h3></span><br><p>Dublin City University</p></li>
+                            <li><span><h3>Leaving Certificate (Ireland)</h3></span><br><p>St Columbas College Stranorlar</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -149,10 +182,46 @@
     </section>
 
     <section id="projects">
-        <div class="projects">
-            <h2>Projects.</h2>
-
+        <div class="portfolio">
+            <div class="container">
+                <div class="sub-title">
+                    <h1 class="subtitle">My <span>Work</span></h1>
+                </div>
+                <div class="work-list">
+                    <div class="project">
+                        <img src="images/ArtistConnect1.png" alt="">
+                        <div class="layer">
+                            <h3>ArtistConnect</h3>
+                            <p>A music themed social media application allowing music fans and artists to communicate,
+                                collaborate and interact.</p>
+                            <a href=""><box-icon name='link-external' ></box-icon></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/ArtistConnect2.png" alt="">
+                        <div class="layer">
+                            <h3>Share With Friends</h3>
+                            <p>Gather more traction for your gigs by posting on our platform</p>
+                            <a href=""><box-icon name='link-external' ></box-icon></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/ArtistConnect3.png" alt="">
+                        <div class="layer">
+                            <h3>Find new songs based on songs you like</h3>
+                            <p>With a built in song reccomender, you can discover songs that may not have previously been
+                                known to you that fit your style</p>
+                            <a href=""><box-icon name='link-external' ></box-icon></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="button">See More</a>
+            </div>
         </div>
+    </section>
+
+    <section id="contact">
+        
     </section>
 
     <footer>
@@ -161,10 +230,10 @@
 
     <script>
         var typed = new Typed('#typed', {
-            strings: ['full stack developer.', 'tech enthusiast.', 'continuous learner.'],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true
+            strings: ['Full Stack Developer.', 'Tech Enthusiast.', 'Continuous learner.'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
         });
     </script>
 </body>
