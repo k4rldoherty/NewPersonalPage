@@ -47,6 +47,32 @@ a.logo:hover {
     animation: slideTop .5s ease forwards;
 }
 
+.navbar-mobile {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #102542;
+    text-align: center;
+}
+
+.navbar-mobile a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-mobile.show {
+    display: block;
+}
+
+.navbar-mobile a:hover {
+    color: #F87060;
+    text-decoration: underline;
+}
+
 .burger {
     display: none;
 }
@@ -231,6 +257,10 @@ a.logo:hover {
         flex-direction: column !important;
         gap: 10px;
     }
+
+    html {
+        font-size: 70%;
+    }
 }
 
 .tab-links::after {
@@ -402,6 +432,11 @@ a.logo:hover {
     box-shadow: 0 0 30px #4392F1;
 }
 
+.button:disabled {
+    background-color: grey;
+    border: none;
+}
+
 @media (max-width: 800px) {
     .layer p {
         font-size: 10px;
@@ -458,7 +493,7 @@ footer {
     background-color: #102542;
     color: #ECE8EF;
     font-weight: 800;
-    padding: 5% 5%;
+    padding: 20px 5%;
 }
 
 /* ---------------------Animations---------------- */

@@ -11,3 +11,16 @@ function openTabs(tab) {
     document.getElementById(tab).classList.add("active-tab");
 
 }
+
+
+function emptyInputBoxes() {
+    emailInputBox = document.getElementById("email-input").value = "";
+    nameInputBox = document.getElementById("name-input").value = "";
+    messageInputBox = document.getElementById("message-input").value = "";
+}
+
+
+function openNav() {
+    var mobileMenu = document.getElementById("navbar-mobile");
+    mobileMenu.classList.toggle("show");
+}
