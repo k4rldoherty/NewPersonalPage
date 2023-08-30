@@ -6,6 +6,10 @@
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------------------Header---------------- */
 
 .header{
@@ -83,7 +87,7 @@ a.logo:hover {
 }
 
 /* ---------------------Home---------------- */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .home-content {
         display: flex;
         flex-direction: column !important;
@@ -111,7 +115,7 @@ a.logo:hover {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 20% 10%;
+    padding: 15% 25% 10% 10%;
     background-color: #ECE8EF;
     color: #000000;
 }
@@ -184,7 +188,7 @@ a.logo:hover {
 .about {
     padding: 5% 10%;
     color: #000000;
-    background-color: #ECE8EF;
+    background-color: white;
 }
 
 @media (max-width: 1000px) {
@@ -294,9 +298,10 @@ a.logo:hover {
 .tab-contents.active-tab {
     display: block;
 }
+
 /* ---------------------Skills---------------- */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .skills {
         display: flex;
         flex-direction: column !important;
@@ -308,7 +313,7 @@ a.logo:hover {
 }
 
 .skills {
-    padding: 10px 10%;
+    padding: 5% 10%;
     background-color: #ECE8EF;
     display: flex;
     flex-direction: row;
@@ -322,8 +327,6 @@ a.logo:hover {
     flex-direction: column;
     width: 50%;
     gap: 20px;
-    animation: slideTop .5s ease forwards;
-    
 }
 
 .soft-skills {
@@ -332,7 +335,6 @@ a.logo:hover {
     align-items: center;
     width: 50%;
     gap: 20px;
-    animation: slideTop .5s ease forwards;
 }
 
 .skill {
@@ -340,25 +342,27 @@ a.logo:hover {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    animation: slideRight .5s ease forwards;
 }
 
 /* ---------------------Projects ---------------- */
 .portfolio {
     padding: 5% 10%;
-    background-color: #ECE8EF;
+    background-color: white;
 }
 
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
 }
 
 .project {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    animation: slideRight .5s ease forwards;
+    margin-top: 50px; 
     
 }
 
@@ -441,6 +445,10 @@ a.logo:hover {
     .layer p {
         font-size: 10px;
     }
+
+    .layer h3 {
+        font-size: 15px;
+    }
 }
 
 /* --------------------- Contact ---------------- */
@@ -464,10 +472,12 @@ a.logo:hover {
     align-items: center;
     justify-content: center;
     gap: 2%;
+    animation: slideRight .5s ease forwards; 
 }
 
 .col-2 {
     flex-basis: 60%;
+    animation: slideRight .5s ease forwards; 
 }
 
 .col-2 form{

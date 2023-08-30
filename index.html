@@ -33,14 +33,14 @@
             <a href="#about">-About Me</a>
             <a href="#skills">-Skills</a>
             <a href="#projects">-Projects</a>
-            <a href="#">-Contact</a>
+            <a href="#contact">-Contact</a>
         </nav>
         <box-icon class="burger" onclick="openNav()" name='menu' color='#ffffff'></box-icon>
         <nav class="navbar-mobile" id="navbar-mobile">
             <a href="#about" onclick="openNav()">-About Me</a>
-            <a href="#skills"onclick="openNav()">-Skills</a>
-            <a href="#projects"onclick="openNav()">-Projects</a>
-            <a href="#contact"onclick="openNav()">-Contact</a>
+            <a href="#skills" onclick="openNav()">-Skills</a>
+            <a href="#projects" onclick="openNav()">-Projects</a>
+            <a href="#contact" onclick="openNav()">-Contact</a>
         </nav>
     </header>
 
@@ -80,7 +80,7 @@
         <div class="about">
             <div class="row">
                 <div class="about-col1">
-                    <img src="./images/IMG-0510.jpg" alt="">
+                    <img src="./images/Optimized-IMG-0510.jpg" alt="">
                 </div>
                 <div class="about-col2">
                     <h1 class="subtitle">About <span>Me</span></h1>
@@ -126,7 +126,7 @@
                             <li><span>
                                     <h3>Full Stack Development</h3>
                                 </span><br>
-                                <p>Designing and iplementing full stack projects</p>
+                                <p>Designing and implementing full stack projects</p>
                             </li>
                             <li><span>
                                     <h3>UI/UX</h3>
@@ -240,7 +240,8 @@
                             <h3>ArtistConnect</h3>
                             <p>A music themed social media application allowing music fans and artists to communicate,
                                 collaborate and interact.</p>
-                            <a href=""><box-icon name='link-external'></box-icon></a>
+                            <a href="https://github.com/k4rldoherty/ArtistConnect"><box-icon
+                                    name='link-external'></box-icon></a>
                         </div>
                     </div>
                     <div class="project">
@@ -248,7 +249,8 @@
                         <div class="layer">
                             <h3>Share With Friends</h3>
                             <p>Gather more traction for your gigs by posting on our platform</p>
-                            <a href=""><box-icon name='link-external'></box-icon></a>
+                            <a href="https://github.com/k4rldoherty/ArtistConnect"><box-icon
+                                    name='link-external'></box-icon></a>
                         </div>
                     </div>
                     <div class="project">
@@ -258,7 +260,8 @@
                             <p>With a built in song reccomender, you can discover songs that may not have previously
                                 been
                                 known to you that fit your style</p>
-                            <a href=""><box-icon name='link-external'></box-icon></a>
+                            <a href="https://github.com/k4rldoherty/ArtistConnect"><box-icon
+                                    name='link-external'></box-icon></a>
                         </div>
                     </div>
                 </div>
@@ -273,18 +276,18 @@
             <div class="contact">
                 <div class="row">
                     <div class="col-2">
-                        <form action="submit">
-                            <input id="email-input" type="text" placeholder="e-mail">
-                            <input id="name-input" type="text" placeholder="name">
+                        <form action="submit" name="submit-to-google-sheet">
+                            <input id="email-input" type="text" placeholder="e-mail" name="email">
+                            <input id="name-input" type="text" placeholder="name" name="name">
                             <textarea id="message-input" name="message" rows="12" placeholder="Your Message"></textarea>
-                            <button onclick="emptyInputBoxes()" type="submit" class="button" disabled="true">
-                                <p>Work In Progress - Stay Tuned</p>
+                            <button onclick="emptyInputBoxes()" type="submit" class="button" >
+                                <p>Message Me</p>
                             </button>
                         </form>
                     </div>
                     <div class="col-1">
-                        <box-icon name='envelope' type='solid' color='#000000' size="lg"
-                            animation='tada-hover'></box-icon>
+                        <a href="#"><box-icon name='envelope' type='solid' color='#000000' size="lg"
+                                animation='tada-hover'></box-icon></a>
                         <a href="#"><box-icon name='facebook-square' size="lg" type='logo'
                                 animation='tada-hover'></box-icon></a>
                         <a href="#"><box-icon name='instagram' type='logo' size="lg"
@@ -313,6 +316,18 @@
             backSpeed: 50,
             loop: true
         });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzd5bp2mImhwBFcHONBzpjHIeMBnRMxLdpXN5TDUTrlyKGY-6zOlLZngglpc99saYyjlg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
