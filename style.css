@@ -87,12 +87,13 @@ a.logo:hover {
 }
 
 /* ---------------------Home---------------- */
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
     .home-content {
         display: flex;
         flex-direction: column !important;
         align-items: center;
         justify-content: center;
+        padding-top: 75px;
     }
 
     .home-content img{ 
