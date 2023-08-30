@@ -93,7 +93,6 @@ a.logo:hover {
         flex-direction: column !important;
         align-items: center;
         justify-content: center;
-        text-align: center;
     }
 
     .home-content img{ 
@@ -128,6 +127,13 @@ a.logo:hover {
     align-items: center;
     gap: 10vw;
     animation: slideRight .5s ease forwards;
+}
+
+.typed-container {
+    display: flex;
+    height: 150px;
+    padding: 50px 0;
+    align-items: center;
 }
 
 .left a {
