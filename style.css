@@ -118,6 +118,7 @@ a.logo:hover {
     padding: 15% 25% 10% 10%;
     background-color: #ECE8EF;
     color: #000000;
+    height: 100vh;
 }
 
 /* RESPONSIVE NEEDED */
@@ -181,7 +182,7 @@ a.logo:hover {
 .home-content h1 {
     font-size: 70px;
     font-weight: 700;
-    color: #4392F1;
+    color: #102542;
 }
 
 .home-content p {
@@ -202,9 +203,6 @@ a.logo:hover {
     .row {
         display: flex;
         flex-direction: column !important;
-        /* align-items: center;
-        justify-content: center; */
-        /* text-align: center; */
         gap: 30px;
     }
 }
