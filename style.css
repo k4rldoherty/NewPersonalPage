@@ -94,6 +94,7 @@ a.logo:hover {
         align-items: center;
         justify-content: center;
         padding-top: 75px;
+        height: 120vh;
     }
 
     .home-content img{ 
