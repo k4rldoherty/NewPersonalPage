@@ -88,16 +88,20 @@ a.logo:hover {
 
 /* ---------------------Home---------------- */
 @media (max-width: 1023px) {
-    .home-content {
+    .home {
         display: flex;
         flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
-        padding-top: 75px;
-        height: 120vh;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-top: 100px !important;
+        height: auto !important;
     }
 
     .home-content img{ 
+        display: none;
+    }
+
+    .right {
         display: none;
     }
 
@@ -108,6 +112,10 @@ a.logo:hover {
     .navbar a {
         display: none;
     }
+
+    p.desktop-only {
+        display: none;
+    }
 }
 
 .home {
@@ -116,7 +124,7 @@ a.logo:hover {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 15% 25% 10% 10%;
+    padding: 15% 10% 20% 10%;
     background-color: #ECE8EF;
     color: #000000;
     height: 100vh;
@@ -137,6 +145,9 @@ a.logo:hover {
     height: 150px;
     padding: 50px 0;
     align-items: center;
+}
+.left {
+    max-width: 50vw;
 }
 
 .left a {
@@ -176,7 +187,7 @@ a.logo:hover {
 }
 
 .home-content h3 {
-    font-size: 46px;
+    font-size: 45px;
     margin: 5px 0;
 }
 
