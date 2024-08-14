@@ -53,12 +53,12 @@
                 </div>
                 <p>A recently graduated Software Developer from Dublin City University,<br> with 6 months of
                     industry experience in both front and back end development.<br><br></p>
-                <p class="desktop-only">I am passionate about creating efficient and user-friendly software solutions that solve real-world
+                <p class="desktop-only">I am passionate about creating efficient and user-friendly software solutions
+                    that solve real-world
                     problems. With a strong foundation in programming languages such as Java, Python, and JavaScript, I
-                    am dedicated to continuous learning and staying up-to-date with the latest industry trends.</p><br><br>
+                    am dedicated to continuous learning and staying up-to-date with the latest industry trends.</p>
+                <br><br>
                 <div class="socials">
-                    <a href="#"><box-icon name='facebook-square' size="lg" type='logo'
-                            animation='tada-hover'></box-icon></a>
                     <a href="#"><box-icon name='instagram' type='logo' size="lg" animation='tada-hover'></box-icon></a>
                     <a href="https://github.com/k4rldoherty"><box-icon name='github' type='logo' size="lg"
                             animation='tada-hover'></box-icon></a>
@@ -70,9 +70,6 @@
                     <p>More about
                         me</p>
                 </a>
-            </div>
-            <div class="right">
-                <img src="./images/pic.jpeg" alt="">
             </div>
         </div>
     </section>
@@ -144,19 +141,19 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>
+                                    <h3>2024 - Present</h3>
+                                </span><br>
+                                <p>AFBI - Software Engineer</p>
+                            </li>
+                            <li><span>
                                     <h3>2022 - 2022 (Internship)</h3>
                                 </span><br>
-                                <p>Software Engineer</p>
+                                <p>IRLCA Ltd. - Software Engineer</p>
                             </li>
                             <li><span>
                                     <h3>2021 - 2023</h3>
                                 </span><br>
                                 <p>O'Reillys Sports - Website Maintenance / Store Assistant</p>
-                            </li>
-                            <li><span>
-                                    <h3>2016 - 2021</h3>
-                                </span><br>
-                                <p>Kees Hotel - Lifegaurd</p>
                             </li>
                         </ul>
                     </div>
@@ -249,7 +246,8 @@
                         <img src="images/BulkEmail.png" alt="Bulk Email Sender">
                         <div class="layer">
                             <h3>Bulk Email Tracker</h3>
-                            <p>A project I completed for a local business to help sale time sending mass amounts of cold sales emails.</p>
+                            <p>A project I completed for a local business to help sale time sending mass amounts of cold
+                                sales emails.</p>
                             <a href="https://github.com/k4rldoherty/BulkEmailSender-Backend"><box-icon
                                     name='link-external'></box-icon></a>
                         </div>
@@ -300,8 +298,6 @@
                     <div class="col-1">
                         <a href="#"><box-icon name='envelope' type='solid' color='#000000' size="lg"
                                 animation='tada-hover'></box-icon></a>
-                        <a href="#"><box-icon name='facebook-square' size="lg" type='logo'
-                                animation='tada-hover'></box-icon></a>
                         <a href="#"><box-icon name='instagram' type='logo' size="lg"
                                 animation='tada-hover'></box-icon></a>
                         <a href="https://github.com/k4rldoherty"><box-icon name='github' type='logo' size="lg"
@@ -328,18 +324,6 @@
             backSpeed: 50,
             loop: true
         });
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzd5bp2mImhwBFcHONBzpjHIeMBnRMxLdpXN5TDUTrlyKGY-6zOlLZngglpc99saYyjlg/exec'
-        const form = document.forms['submit-to-google-sheet']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
     </script>
 </body>
 
